@@ -1,0 +1,42 @@
+[0m[1mdata.xenorchestra_template.template: Reading...[0m[0m
+[0m[1mdata.xenorchestra_pool.pool: Reading...[0m[0m
+[0m[1mdata.xenorchestra_pool.pool: Read complete after 0s [id=f212dec4-4682-6045-6dae-1fe80229e66f][0m
+[0m[1mdata.xenorchestra_sr.sr: Reading...[0m[0m
+[0m[1mdata.xenorchestra_network.network: Reading...[0m[0m
+[0m[1mdata.xenorchestra_template.template: Read complete after 0s [id=ef89afef-6799-1040-05e1-2274044a15fa][0m
+[0m[1mdata.xenorchestra_sr.sr: Read complete after 0s [id=8fd11492-f4b9-762c-1583-373ff9b305e9][0m
+[0m[1mdata.xenorchestra_network.network: Read complete after 0s [id=06e1ffdc-30e9-66f7-f265-992376416c35][0m
+[0m[1mxenorchestra_vm.vm: Refreshing state... [id=4b85418f-bdd4-77ff-3920-94657517db9f][0m
+[0m[1mxenorchestra_vm.vm3: Refreshing state... [id=398761d8-f593-940c-ca7a-dfff4f00c45b][0m
+[0m[1mxenorchestra_vm.vm2: Refreshing state... [id=4d7162a2-fb7b-8ac5-849f-81747b0fd0b4][0m
+[0m
+[1mChanges to Outputs:[0m[0m
+  [33m~[0m [0m[1m[0mall-ipv4-ips-for-vm2[0m[0m = [
+      [32m+[0m [0m"192.168.3.163",
+    ]
+  [33m~[0m [0m[1m[0mall-ipv4-ips-for-vm3[0m[0m = [
+      [32m+[0m [0m"192.168.3.164",
+    ]
+
+You can apply this plan to save these new output values to the Terraform
+state, without changing any real infrastructure.
+[0m[1m
+Do you want to perform these actions?[0m
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  [1mEnter a value:[0m [0m
+[0m[1m[32m
+Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
+[0m[0m[1m[32m
+Outputs:
+
+[0mall-ipv4-ips-for-vm = tolist([
+  "192.168.3.162",
+])
+all-ipv4-ips-for-vm2 = tolist([
+  "192.168.3.163",
+])
+all-ipv4-ips-for-vm3 = tolist([
+  "192.168.3.164",
+])
